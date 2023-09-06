@@ -69,6 +69,10 @@ mpsearch(void)
 // Check for correct signature, calculate the checksum and,
 // if correct, check the version.
 // To do: check extended table checksum.
+#if __GNUC__ >= 12
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Warray-bounds"
+#endif
 static struct mpconf*
 mpconfig(struct mp **pmp)
 {
@@ -137,3 +141,6 @@ mpinit(void)
     outb(0x23, inb(0x23) | 1);  // Mask external interrupts.
   }
 }
+#if __GNUC__ >= 12
+#pragma GCC diagnostic pop
+#endif
