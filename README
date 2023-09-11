@@ -1,6 +1,8 @@
-NOTE: we have stopped maintaining the x86 version of xv6, and switched
-our efforts to the RISC-V version
-(https://github.com/mit-pdos/xv6-riscv.git)
+This is a fork of the original x86 version of MIT's xv6 operating system
+(see https://github.com/mit-pdos/xv6-public/), intended for use by the
+Faculty of Applied Sciences of the Ukrainian Catholic University (UCU)
+in the OS course. This repository is maintained by faculty and students
+to improve xv6 and provide compatibility updates.
 
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
